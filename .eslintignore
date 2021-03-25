@@ -1,0 +1,5 @@
+node_modules
+dist
+snowpack.config.js
+workbox-config.js
+**/*.scss.d.ts
