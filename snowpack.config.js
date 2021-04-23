@@ -9,7 +9,12 @@ module.exports = {
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
     '@snowpack/plugin-sass',
-    '@canarise/snowpack-eslint-plugin',
+    [
+      '@canarise/snowpack-eslint-plugin',
+      {
+        globs: ['src/**/*.tsx', 'src/**/*.ts'],
+      },
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
